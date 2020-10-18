@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tạo slideshow cho trang thiết kế nội thất bằng jQuery và CSS3</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+	<link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico" />
+
+
+</head>
+
+<body>
+
+	<div class="main_gallery">
+		<div id="gallery" class="content-gallery">
+			<div class="slideshow-container">
+				<div id="slideshow" class="slideshow"></div>
+				<div id="caption" class="caption-container"></div>
+			</div>
+		</div>
+		<!-- Navigation Thumbs  -->
+		<div id="thumbs" class="navigation">
+			<ul class="thumbs noscript">
+				<li>
+					<a class="thumb" name="leaf" href="images/iphone12.jpg" title="Agrocore">
+						<img src="images/iphone12.jpg" alt="Agrocore" />
+						<p class="font">Giá iPhone 12 chính hãng tại Việt Nam (chính thức): 21.99 triệu đồng 
+							cho phiên bản thấp nhất, giá cao nhất 43.99 triệu đồng</p>
+					</a>
+					
+					<div class="caption">
+						
+							<div class="h4">Giá iPhone 12 chính hãng tại Việt Nam (chính thức): 21.99 triệu đồng 
+								cho phiên bản thấp nhất, giá cao nhất 43.99 triệu đồng</div>
+							<div class="image-desc"><a class="hover" style="text-decoration: none;" href="https://www.thegioididong.com/tin-tuc/gia-iphone-12-chinh-hang-tai-viet-nam-du-kien-1298703">
+								 Người hâm mộ không chỉ quan tâm về thiết kế và thông số cấu hình, mà còn đặc biệt quan 
+								tâm về giá bán, theo đó dòng iPhone 12 sẽ được bán chính hãng tại Việt Nam với mức giá như sau...</a></div>
+					</div>
+				</li>
+			</ul>
+			<ul class="thumbs noscript">
+				<li>
+					<a class="thumb" name="leaf" href="images/samsums21.png" title="ProClinique">
+						<img src="images/samsums21.png" alt="ProClinique" />
+						<p class="font">Samsung Galaxy S21 lộ ảnh render sắc nét với cụm 3 camera sau độc đáo, màn hình đục lỗ tràn viền</p>
+					</a>
+					<div class="caption">
+						
+						<div class="h4">Samsung Galaxy S21 lộ ảnh render sắc nét với cụm 3 camera sau độc đáo, màn hình đục lỗ tràn viền</div>
+						<div class="image-desc"><a class="hover" style="text-decoration: none;" href="https://www.thegioididong.com/tin-tuc/samsung-galaxy-s21-lo-anh-render-sac-net-voi-cum-camera-sau-nho-gon-1300011">Theo hình ảnh được chia sẻ, dòng Galaxy S21 có một vài thay đổi trong cách thiết kế cụm camera sau và
+							 trông có vẻ độc đáo hơn sản phẩm tiền nhiệm là Galaxy S20. Camera sau của máy đã trở nên nhỏ gọn và liền mạch với phần</a></div>
+				</div>
+				</li>
+			</ul>
+			<ul class="thumbs noscript">
+				<li>
+					<a class="thumb" name="leaf" href="images/ip12mini.jpg" title="Beauty">
+						<img src="images/ip12mini.jpg" alt="Beauty" />
+						<p class="font">iPhone 12 mini và hiệu ứng truyền thông về một flagship mạnh mẽ nhưng giá vẫn rẻ</p>
+					</a>
+					<div class="caption">
+						
+						<div class="h4">iPhone 12 mini và hiệu ứng truyền thông về một flagship mạnh mẽ nhưng giá vẫn rẻ</div>
+						<div class="image-desc">Trong buổi lễ ra mắt, Apple đã rất nhấn mạnh việc iPhone 12 mini là smartphone 5G nhỏ nhất, mỏng nhất và nhẹ nhất thế giới.
+
+							Rất khó để so sánh với một thiết bị màn hình nhỏ khác như iPhone SE 2020, iPhone 12 mini thuộc đẳng cấp của một flagship thực thụ. Phiên bản này theo thông tin </div>
+				</div>
+				</li>
+
+			</ul>
+		</div>
+		<!-- End Navigation Thumbs -->
+	</div>
+	<!-- End Main -->
+
+	</div>
+
+
+	<!-- load that jquery library -->
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+	<!-- galleriffic -->
+	<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+	<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			/*$('div.content').css('display', 'block');*/
+			$('div.content-gallery').css('display', 'block');
+
+			var onMouseOutOpacity = 0.5;
+			$('#thumbs ul.thumbs li').opacityrollover({
+				mouseOutOpacity: onMouseOutOpacity,
+				mouseOverOpacity: 1.0,
+				fadeSpeed: 'fast',
+				exemptionSelector: '.selected'
+			});
+
+			var gallery = $('#thumbs').galleriffic({
+				delay: 6500,
+				numThumbs: 10,
+				preloadAhead: 10,
+				enableTopPager: true,
+				enableBottomPager: true,
+				maxPagesToShow: 7,
+				imageContainerSel: '#slideshow',
+				controlsContainerSel: '#controls',
+				captionContainerSel: '#caption',
+				loadingContainerSel: '#loading',
+				renderSSControls: true,
+				renderNavControls: true,
+				playLinkText: 'Play Slideshow',
+				pauseLinkText: 'Pause Slideshow',
+				prevLinkText: 'previous',
+				nextLinkText: 'next',
+				nextPageLinkText: 'Next &rsaquo;',
+				prevPageLinkText: '&lsaquo; Prev',
+				enableHistory: false,
+				autoStart: true,
+				syncTransitions: true,
+				defaultTransitionDuration: 900,
+				onSlideChange: function (prevIndex, nextIndex) {
+					this.find('ul.thumbs').children()
+						.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+						.eq(nextIndex).fadeTo('fast', 1.0);
+				},
+				onPageTransitionOut: function (callback) {
+					this.fadeTo('fast', 0.0, callback);
+				},
+				onPageTransitionIn: function () {
+					this.fadeTo('fast', 1.0);
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
