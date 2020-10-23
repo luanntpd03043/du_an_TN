@@ -1,0 +1,224 @@
+/*======= width =======*/
+.main_gallery {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    height: 600px;
+}
+
+/*--- gallery ---*/
+
+div.content-gallery {
+
+    /* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+    display: none;
+    width: 887px;
+    height: 600px;
+}
+
+div.content-gallery a,
+div.navigation a {
+    text-decoration: none;
+    color: #777;
+
+}
+
+div.content-gallery a:focus,
+div.content-gallery a:hover,
+div.content a:active {
+    text-decoration: underline;
+}
+
+div.slideshow-container {
+    position: relative;
+    clear: both;
+    height: 600px;
+    /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+div.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(images/loader-gall.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 887px;
+    height: 425px;
+    /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+div.slideshow {
+    height: 600px;
+    width: 887px;
+    /*overflow:hidden;*/
+}
+
+div.slideshow span.image-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.slideshow a.advance-link {
+    display: block;
+    width: 887px;
+    height: 600px;
+    /* This should be set to be at least the height of the largest image in the slideshow */
+    text-align: center;
+    overflow: hidden;
+}
+
+div.slideshow a.advance-link:hover,
+div.slideshow a.advance-link:active,
+div.slideshow a.advance-link:visited {
+    text-decoration: none;
+
+}
+
+div.slideshow img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 437px;
+    width: 887px;
+}
+
+div.caption-container {
+    /*position: relative;
+    clear: both;
+    height:7px;*/
+}
+
+span.image-caption {
+    display: block;
+    position: absolute;
+    width: 887px;
+    height: 600px;
+    top: 0;
+    left: 0;
+
+}
+
+div.caption {
+    width: 887px;
+    margin-top: 277px;
+    background: url(images/bg.png);
+    height: 160px;
+    
+}
+
+div.caption .h4 {
+    z-index: 10;
+    font-size: 20px;
+    line-height: 1.2em;
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: justify;
+    text-transform: uppercase;
+    
+}
+
+div.image-desc {
+    font-size: 16px;
+    color: #afaeae;
+    font-family:'Times New Roman', Times, serif;
+    padding: 0px 25px 10px 25px;
+    text-align: justify;
+    line-height: 1.5em;
+
+
+
+
+}
+
+
+a.hover:hover {
+    text-decoration: none;
+    color: darkorange;
+}
+
+div.navigation {
+    background: #89d4ff;
+
+    height: 435px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 900px;
+    margin-top: -600px;
+    width: 440px;
+    /* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+
+ul.thumbs li a {}
+
+ul.thumbs li p.font {
+    color: rgb(0, 0, 0);
+    margin-left: 205px;
+    text-align: justify;
+    height: 125px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+ul.thumbs {
+    clear: both;
+    margin: 0;
+    padding: 0;
+  
+}
+
+ul.thumbs li {
+    float: left;
+    margin-top: -16px;
+    list-style: none;
+    
+}
+
+ul.thumbs li.last {
+    padding-right: 0;
+
+}
+
+a.thumb {
+    display: block;
+
+}
+
+ul.thumbs li.selected a.thumb {
+    padding: 0;
+    font-weight: bold;
+    height: 145px;
+    background-color: rgb(71, 231, 119);
+    -webkit-box-shadow: -21px 0px 0px 0px rgb(71, 231, 119);
+    -moz-box-shadow: -21px 0px 0px 0px rgb(71, 231, 119);
+    box-shadow: -13px 0px 0px 0px rgb(71, 231, 119);
+
+
+}
+ul.thumbs li.selected a.thumb p.font {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a.thumb:focus {
+    outline: none;
+}
+
+ul.thumbs img {
+    border: none;
+    display: block;
+    height: 145px;
+
+    float: left;
+    width: 200px;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
