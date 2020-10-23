@@ -3,10 +3,9 @@ html {
     padding: 0;
 }
 .content{
-    /* background-image: url(https://logos.textgiraffe.com/logos/logo-name/Bana-designstyle-america-m.png); */
     width: 200px;
     height: 250px;
-    background-size: cover;
+    /* background-size: cover; */
 }
 body {
     font-family: 'Handlee', cursive;
@@ -15,14 +14,14 @@ body {
     padding: 10px;
     margin: 0;
 }
-h1 {
+h3 {
     font-size: 15pt;
     color: #20bcd5;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
 }
-h1 span {
+h3 span {
     border: 4px dashed #20bcd5;
     padding: 10px;
 }
@@ -30,24 +29,40 @@ p {
     padding: 0;
     margin: 0;
 }
-.img-circle {
-    border: 3px solid white;
-    border-radius: 50%;
+h5 {
+    font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
 }
+h4 {
+    font-size: 15pt;
+    color: rgb(187, 70, 54);
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+
 .section {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
+}  
+.anh {
+    margin: 0 auto;
 }
+
 #header {
-    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-image: url("/Img/header.jpg");
     background-size: cover;
 }
 #header img {
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin: auto;
 }
 #header p {
