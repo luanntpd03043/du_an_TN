@@ -1,0 +1,94 @@
+.header{
+    background: rgb(214, 214, 214);
+    height: 50px;
+}
+.navbar{
+    height: 100px;
+    background: rgb(238, 125, 20);
+    
+}
+.navbar .user{
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    margin-top: -15px;
+    margin-left: 10px;
+    
+}
+.navbar .user a{
+    color: rgb(3, 95, 10);
+}
+.navbar .register{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.navbar .register a{
+    color: rgb(3, 95, 10);
+}
+.navbar-brand{
+    width: auto;
+    background: turquoise;
+    margin-left: 30px;
+}
+
+    
+
+.input{
+    border: 1px solid #00483e;
+    margin-bottom: 10px;
+    display: inline-block;
+    clear: both;
+    width: 380px;
+
+}
+.input input{
+    height: 40px;
+    width: 283px;
+    background: none;
+    border: 0;
+    font: normal 12px Arial,Helvetica,sans-serif;
+    color: #555;
+    padding: 10px 8px 8px 15px;
+}
+.input button{
+    height: 40px;
+    float: right;
+    background: #00483e;
+    border: 0;
+    color: #fff;
+    font: normal 12px Arial,Helvetica,sans-serif;
+    padding: 8px 15px 8px 15px;
+    cursor: pointer;
+    margin-top: -40px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: rgb(199, 199, 199);
+    height: 50px;
+
+}
+.ul li{
+    padding-left: 70px;
+    float: left;
+    line-height: 46px;
+    position: relative;
+    white-space: nowrap;
+    font-size: 14px;
+
+}
+.ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.ul li a:hover{
+text-decoration: none;
+}
+
+
+
+
+
